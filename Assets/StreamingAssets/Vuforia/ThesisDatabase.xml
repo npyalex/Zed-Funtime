@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="StarfieldTarget" size="8.500000 11.000000"/>
+        <ImageTarget name="StarTarget" size="3.000000 1.815199"/>
+        <ImageTarget name="RollTest" size="4.000000 6.104153"/>
+        <ImageTarget name="TestCube.Left" size="3.000000 3.000000"/>
+        <ImageTarget name="TestCube.Front" size="3.000000 3.000000"/>
+        <ImageTarget name="TestCube.Right" size="3.000000 3.000000"/>
+        <ImageTarget name="TestCube.Back" size="3.000000 3.000000"/>
+        <ImageTarget name="TestCube.Top" size="3.000000 3.000000"/>
+        <MultiTarget name="TestCube">
+            <Part name="TestCube.Left" translation="-1.5 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="TestCube.Right" translation="1.5 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="TestCube.Front" translation="0 0 1.5" rotation="AD: 1 0 0 0"/>
+            <Part name="TestCube.Back" translation="0 0 -1.5" rotation="AD: 0 1 0 180"/>
+            <Part name="TestCube.Top" translation="0 1.5 0" rotation="AD: 1 0 0 -90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>
