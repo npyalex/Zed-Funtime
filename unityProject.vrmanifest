@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.zedfuntime.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\3174283\\Zed Funtime\\actions.json",
+      "action_manifest_path": "C:\\Users\\3174283.OCAD\\Documents\\GitHub\\Zed-Funtime\\actions.json",
       "strings": {
         "en_us": {
           "name": "Zed Funtime [Testing]"

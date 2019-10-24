@@ -45,6 +45,8 @@ public class ActionsTest : MonoBehaviour
             GameObject go = new GameObject();
             go.AddComponent<MeshFilter>();
             go.AddComponent<MeshRenderer>();
+            go.AddComponent<Rigidbody>();
+            go.AddComponent<MeshCollider>();
             currLine = go.AddComponent<LineRenderer>();
             currLine.material = lMat;
             currLine.SetWidth(.1f, .1f);
