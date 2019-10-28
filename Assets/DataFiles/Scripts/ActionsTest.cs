@@ -12,7 +12,8 @@ public class ActionsTest : MonoBehaviour
     public SteamVR_Action_Boolean clickHeld;
 
     public Material lMat;
-
+    private Rigidbody body;
+    private MeshCollider banger;
     private LineRenderer currLine;
     private int numClicks = 0;
 
@@ -45,8 +46,14 @@ public class ActionsTest : MonoBehaviour
             GameObject go = new GameObject();
             go.AddComponent<MeshFilter>();
             go.AddComponent<MeshRenderer>();
-            go.AddComponent<Rigidbody>();
-            go.AddComponent<MeshCollider>();
+            body = go.AddComponent<Rigidbody>();
+            //go.AddComponent<InteractionBehaviour>();
+            body.isKinematic = false;
+            body.useGravity = false;
+            var type = Type.GetType("InteractionBehaviour");
+            go.AddComponent(type);
+            banger = go.AddComponent<MeshCollider>();
+            banger.convex = true;
             currLine = go.AddComponent<LineRenderer>();
             currLine.material = lMat;
             currLine.SetWidth(.1f, .1f);
