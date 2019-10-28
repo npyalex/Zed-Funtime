@@ -20,6 +20,7 @@ public class DropOnceTouched : MonoBehaviour
         currentLocation = transform.position;
         if (currentLocation != startLocation) {
             body.useGravity = true;
+            body.isKinematic = false;
         }
     }
 }
