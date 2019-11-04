@@ -430,10 +430,10 @@
       <HintPath>C:/Users/3174283.OCAD/Documents/GitHub/Zed-Funtime/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions.Editor">
-      <HintPath>C:/Users/3174283.OCAD/Documents/GitHub/Zed-Funtime/Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
+      <HintPath>C:/Users/3174283.OCAD/Documents/GitHub/Zed-Funtime/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>C:/Users/3174283.OCAD/Documents/GitHub/Zed-Funtime/Library/PackageCache/com.ptc.vuforia.engine@8.3.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
+      <HintPath>C:/Users/3174283.OCAD/Documents/GitHub/Zed-Funtime/Library/PackageCache/com.ptc.vuforia.engine@8.5.9/Vuforia/Plugins/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Users/3174283.OCAD/Documents/GitHub/Zed-Funtime/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
