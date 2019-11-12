@@ -119,6 +119,33 @@
             {
                "inputs" : {
                   "click" : {
+                     "output" : "/actions/default/in/grab"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.7",
+                  "force_input" : "value"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/grab"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.75",
+                  "click_deactivate_threshold" : "0.7"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
                      "output" : "/actions/default/in/click"
                   },
                   "held" : {
@@ -130,9 +157,6 @@
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/grab"
-                  },
                   "pull" : {
                      "output" : "/actions/default/in/squeeze"
                   }
@@ -142,9 +166,6 @@
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/grab"
-                  },
                   "pull" : {
                      "output" : "/actions/default/in/squeeze"
                   }

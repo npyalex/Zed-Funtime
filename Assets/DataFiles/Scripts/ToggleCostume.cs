@@ -9,7 +9,7 @@ public class ToggleCostume : MonoBehaviour
     public SteamVR_Action_Boolean grabAction;
     public SteamVR_Action_Boolean grabHeld;
     public GameObject costumePiece;
-    
+
     private int numClicks = 0;
     private bool switchOn = false;
 
@@ -41,8 +41,6 @@ public class ToggleCostume : MonoBehaviour
         //when turning it on, grow it
         if (switchOn == true)
         {
-            costumePiece.SetActive(true);
-            costumePiece.transform.localScale = new Vector3(scale, scale, scale);
             scale += scaleSpeed * Time.deltaTime;
             if (scale > maxScale)
             {
@@ -52,15 +50,10 @@ public class ToggleCostume : MonoBehaviour
         //when turning it off, shrink it
         if (switchOn == false)
         {
-            costumePiece.transform.localScale = new Vector3(scale, scale, scale);
             scale -= scaleSpeed * Time.deltaTime;
             if (scale < minScale)
             {
                 scale = minScale;
-            }
-            if (scale == minScale)
-            {
-                costumePiece.SetActive(false);
             }
         }
 
@@ -83,6 +76,22 @@ public class ToggleCostume : MonoBehaviour
 
     void Toggle()
     {
-        switchOn = !switchOn;
+        //if the object is inactive, turn it on and activate the growth.
+        if (switchOn == false)
+        {
+            switchOn = !switchOn;
+            costumePiece.SetActive(true);
+            costumePiece.transform.localScale = new Vector3(scale, scale, scale);
+        }
+        //if the object is active, activate the shrinkage and turn it off once it's at min size
+        if (switchOn == true)
+        {
+            switchOn = !switchOn;
+            costumePiece.transform.localScale = new Vector3(scale, scale, scale);
+            if (scale == minScale)
+            {
+                costumePiece.SetActive(false);
+            }
+        }
     }
 }
