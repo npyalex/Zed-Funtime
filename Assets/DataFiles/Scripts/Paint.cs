@@ -6,11 +6,12 @@ using UnityEngine;
 public class Paint : MonoBehaviour
 {
     public GameObject paintSource;
+    public GameObject deleter;
     public SteamVR_Input_Sources handType;
-    //public SteamVR_Action_Boolean clickAction;
+    public SteamVR_Action_Boolean clickAction;
     public SteamVR_Action_Boolean grabAction;
     public SteamVR_Action_Boolean grabHeld;
-    //public SteamVR_Action_Boolean clickHeld;
+    public SteamVR_Action_Boolean clickHeld;
 
     public Material lMat;
     private Rigidbody body;
@@ -30,10 +31,15 @@ public class Paint : MonoBehaviour
         return grabHeld.GetState(handType);
     }
 
-    //public bool GetGrab()
-    //{
-    //    return grabAction.GetState(handType);
-    //}
+    public bool GetClick()
+    {
+        return clickHeld.GetState(handType);
+    }
+
+    public bool GetClickDown()
+    {
+        return clickAction.GetState(handType);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -50,15 +56,15 @@ public class Paint : MonoBehaviour
             GameObject go = new GameObject();
             go.AddComponent<MeshFilter>();
             go.AddComponent<MeshRenderer>();
-            go.AddComponent<Light>();
-            //body = go.AddComponent<Rigidbody>();
+            //go.AddComponent<Light>();
+            body = go.AddComponent<Rigidbody>();
             //go.AddComponent<InteractionBehaviour>();
-            //body.isKinematic = false;
+            body.isKinematic = false;
             //body.useGravity = false;
             //var type = Type.GetType("InteractionBehaviour");
             //go.AddComponent(type);
-            //banger = go.AddComponent<MeshCollider>();
-            //banger.convex = true;
+            banger = go.AddComponent<MeshCollider>();
+            banger.convex = true;
             currLine = go.AddComponent<LineRenderer>();
             currLine.material = lMat;
             currLine.SetWidth(.01f, .01f);
@@ -75,6 +81,14 @@ public class Paint : MonoBehaviour
             currLine.SetVertexCount(numClicks + 1);
             currLine.SetPosition(numClicks, paintSource.transform.position);
             numClicks++;
+        }
+
+        if (GetClick())
+        {
+            deleter.SetActive(true);
+        } else
+        {
+            deleter.SetActive(false);
         }
         //else
         //{
