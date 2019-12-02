@@ -11,7 +11,7 @@ public class ToggleCostume : MonoBehaviour
     public GameObject costumePiece;
 
     private int numClicks = 0;
-    private bool switchOn = false;
+    private bool switchOn;
 
     //manage the size of the game object
     public float scale = 0.1f;
@@ -31,12 +31,13 @@ public class ToggleCostume : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        switchOn = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        costumePiece.transform.localScale = new Vector3(scale, scale, scale);
         //manage the growth and shrinkage of the object
         //when turning it on, grow it
         if (switchOn == true)
@@ -54,6 +55,10 @@ public class ToggleCostume : MonoBehaviour
             if (scale < minScale)
             {
                 scale = minScale;
+            }
+            if (scale == minScale)
+            {
+                costumePiece.SetActive(false);
             }
         }
 
@@ -76,22 +81,17 @@ public class ToggleCostume : MonoBehaviour
 
     void Toggle()
     {
+        switchOn = !switchOn;
         //if the object is inactive, turn it on and activate the growth.
         if (switchOn == false)
         {
-            switchOn = !switchOn;
-            costumePiece.SetActive(true);
-            costumePiece.transform.localScale = new Vector3(scale, scale, scale);
+
         }
         //if the object is active, activate the shrinkage and turn it off once it's at min size
         if (switchOn == true)
         {
-            switchOn = !switchOn;
-            costumePiece.transform.localScale = new Vector3(scale, scale, scale);
-            if (scale == minScale)
-            {
-                costumePiece.SetActive(false);
-            }
+            costumePiece.SetActive(true);
         }
+        print(switchOn);
     }
 }

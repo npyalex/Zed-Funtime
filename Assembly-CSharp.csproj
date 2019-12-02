@@ -68,9 +68,10 @@
     <Compile Include="Assets\DataFiles\Scripts\DropOnceTouched.cs" />
     <Compile Include="Assets\DataFiles\Scripts\InputTest.cs" />
     <Compile Include="Assets\DataFiles\Scripts\Paint.cs" />
+    <Compile Include="Assets\DataFiles\Scripts\PaintWithFinger.cs" />
     <Compile Include="Assets\DataFiles\Scripts\PrimaryButtonWatcher.cs" />
     <Compile Include="Assets\DataFiles\Scripts\PrimaryReactor.cs" />
-    <Compile Include="Assets\DataFiles\Scripts\RotateObject.cs" />
+    <Compile Include="Assets\DataFiles\Scripts\RotateThis.cs" />
     <Compile Include="Assets\DataFiles\Scripts\SpawnObject.cs" />
     <Compile Include="Assets\DataFiles\Scripts\SwapObject.cs" />
     <Compile Include="Assets\DataFiles\Scripts\ToggleCostume.cs" />
@@ -324,6 +325,56 @@
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\IgnoreCollisionsInChildren.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\KabschSolver.cs" />
     <Compile Include="Assets\LeapMotion\Modules\InteractionEngine\Scripts\Utility\PhysicsCallbacks.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Activation\ObjectActivation.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Activation\SelectableObject.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\CustomGestureConnector.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\DetectionFinger.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\DetectionHand.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\FingerCollision.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\GestureBase.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\GestureDetection.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\GestureDetectionMenuStuff.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\GestureRequirement.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\BehindTheScenesStuff\GestureRequirementStatics.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\CustomGestureRequirements\FingerCurlRequirement.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\CustomGestureRequirements\FingerExtendedRequirement.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\CustomGestureRequirements\HandDirectionRequirement.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\CustomGestureRequirements\HandVelocityRequirement.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\CustomGestureRequirements\PinchRequirement.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\BallSpawner.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\DirectionalLineSelector.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\FireBullet.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\GameObjectActivationToggle.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\HandFlying.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\HideAndShow.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\LightColorSetter.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\LightController.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\MovementExample.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\ObjectSpawner.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\PunchBagSpawner.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\PunchingBag.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\ResizeObject.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\RotateObject.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\SelectionToggle.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\SetText.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\SpecificRotation.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\Target.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\ExampleScripts\TranslateObject.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\BothHandsPinchingGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\ClapGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\ClawGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\CustomGesture\CustomGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\FingerGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\FistGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\GunGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\HandFacingGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\NumberGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\PeaceGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\PinchGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\PointGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\SwipeGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\Gestures\ThumbGesture.cs" />
+    <Compile Include="Assets\LeapMotionGestureDetection\GestureDetection\Scripts\KeyComponents\DetectionManager.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AudioManager.cs" />
@@ -1402,6 +1453,14 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{12333BA7-55BA-BCD0-B566-9D0C0C456E84}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pcx.Editor.csproj">
+      <Project>{07889F86-2247-13E5-674C-403DC2242C07}</Project>
+      <Name>Pcx.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Pcx.csproj">
+      <Project>{20843FF1-48A2-B947-216C-FCB4219CE4AB}</Project>
+      <Name>Pcx</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
