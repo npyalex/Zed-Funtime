@@ -67,6 +67,7 @@
     <Compile Include="Assets\DataFiles\Scripts\DrawLineManager.cs" />
     <Compile Include="Assets\DataFiles\Scripts\DropOnceTouched.cs" />
     <Compile Include="Assets\DataFiles\Scripts\InputTest.cs" />
+    <Compile Include="Assets\DataFiles\Scripts\ObscurableScript.cs" />
     <Compile Include="Assets\DataFiles\Scripts\Paint.cs" />
     <Compile Include="Assets\DataFiles\Scripts\PaintWithFinger.cs" />
     <Compile Include="Assets\DataFiles\Scripts\PrimaryButtonWatcher.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\DataFiles\Scripts\SpawnObject.cs" />
     <Compile Include="Assets\DataFiles\Scripts\SwapObject.cs" />
     <Compile Include="Assets\DataFiles\Scripts\ToggleCostume.cs" />
+    <Compile Include="Assets\DataFiles\Scripts\TouchTrigger.cs" />
     <Compile Include="Assets\DataFiles\Scripts\WaitToInstantiate.cs" />
     <Compile Include="Assets\LeapMotion\Core\Examples\Example Assets\InertiaPostProcessProvider.cs" />
     <Compile Include="Assets\LeapMotion\Core\Examples\Example Assets\ProjectionPostProcessProvider.cs" />
@@ -757,6 +759,7 @@
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Forward_Lighting.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\Shaders\AlphaBlendTransition.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_Transparent.shader" />
+    <None Include="Assets\DataFiles\Shaders\InvisibleMask 1.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Deferred.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\explosion\Particle_Softrim_Dissolve_alpha.shader" />
     <None Include="Assets\LeapMotion\Core\readme.txt" />
@@ -767,6 +770,7 @@
     <None Include="Assets\ZED\Examples\GreenScreen\Shaders\Mask_Quad.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Blit.shader" />
+    <None Include="Assets\DataFiles\Shaders\InvisibleMask.shader" />
     <None Include="Assets\Crates00\info.txt" />
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\Postprocess_blend.shader" />
@@ -1422,6 +1426,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Pcx.Editor.csproj">
+      <Project>{07889F86-2247-13E5-674C-403DC2242C07}</Project>
+      <Name>Pcx.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
       <Project>{F2EFCC47-1ABA-C136-C6E5-9CAC8193D652}</Project>
       <Name>SteamVR_Actions</Name>
@@ -1438,6 +1446,10 @@
       <Project>{71A4EB36-AC95-CA71-D651-1352DE3FCBB1}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
+    <ProjectReference Include="Pcx.csproj">
+      <Project>{20843FF1-48A2-B947-216C-FCB4219CE4AB}</Project>
+      <Name>Pcx</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
       <Project>{71E7DEAD-F7C9-3BA0-4F03-0699B56A145B}</Project>
       <Name>SteamVR_Input_Editor</Name>
@@ -1453,14 +1465,6 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{12333BA7-55BA-BCD0-B566-9D0C0C456E84}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="Pcx.Editor.csproj">
-      <Project>{07889F86-2247-13E5-674C-403DC2242C07}</Project>
-      <Name>Pcx.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Pcx.csproj">
-      <Project>{20843FF1-48A2-B947-216C-FCB4219CE4AB}</Project>
-      <Name>Pcx</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

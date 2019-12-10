@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - zomBunny
   - Deleter
+  - Hand
   layers:
   - Default
   - TransparentFX
