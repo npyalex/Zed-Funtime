@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_0;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ZED_OCULUS;ZED_STEAM_VR;ZED_SVR_2_0_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_2_0;UNITY_2019_2;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ZED_OCULUS;ZED_STEAM_VR;ZED_SVR_2_0_INPUT;DK_USING_ZERODAYSLOOK;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -74,10 +74,27 @@
     <Compile Include="Assets\DataFiles\Scripts\PrimaryReactor.cs" />
     <Compile Include="Assets\DataFiles\Scripts\RotateThis.cs" />
     <Compile Include="Assets\DataFiles\Scripts\SpawnObject.cs" />
+    <Compile Include="Assets\DataFiles\Scripts\SwapGestures.cs" />
     <Compile Include="Assets\DataFiles\Scripts\SwapObject.cs" />
     <Compile Include="Assets\DataFiles\Scripts\ToggleCostume.cs" />
     <Compile Include="Assets\DataFiles\Scripts\TouchTrigger.cs" />
     <Compile Include="Assets\DataFiles\Scripts\WaitToInstantiate.cs" />
+    <Compile Include="Assets\Depthkit\Core\Depthkit_Clip.cs" />
+    <Compile Include="Assets\Depthkit\Core\Depthkit_ClipPlayer.cs" />
+    <Compile Include="Assets\Depthkit\Core\Depthkit_ClipRenderer.cs" />
+    <Compile Include="Assets\Depthkit\Core\Depthkit_Info.cs" />
+    <Compile Include="Assets\Depthkit\Core\Depthkit_Metadata.cs" />
+    <Compile Include="Assets\Depthkit\Core\Depthkit_PlayerEvents.cs" />
+    <Compile Include="Assets\Depthkit\Examples\Scripts\Depthkit_APIExample.cs" />
+    <Compile Include="Assets\Depthkit\Looks\Photo\Scripts\Depthkit_PhotoLook.cs" />
+    <Compile Include="Assets\Depthkit\Looks\ZeroDays\Scripts\Depthkit_ZeroDaysLook.cs" />
+    <Compile Include="Assets\Depthkit\Looks\ZeroDays\Scripts\Depthkit_ZeroDaysLookFillLayer.cs" />
+    <Compile Include="Assets\Depthkit\Looks\ZeroDays\Scripts\Depthkit_ZeroDaysLookLayer.cs" />
+    <Compile Include="Assets\Depthkit\Looks\ZeroDays\Scripts\Depthkit_ZeroDaysLookLineLayer.cs" />
+    <Compile Include="Assets\Depthkit\Looks\ZeroDays\Scripts\Depthkit_ZeroDaysLookOccludeLayer.cs" />
+    <Compile Include="Assets\Depthkit\Looks\ZeroDays\Scripts\Depthkit_ZeroDaysLookPointLayer.cs" />
+    <Compile Include="Assets\Depthkit\Players\Depthkit_AVProVideoPlayer.cs" />
+    <Compile Include="Assets\Depthkit\Players\Depthkit_UnityVideoPlayer.cs" />
     <Compile Include="Assets\LeapMotion\Core\Examples\Example Assets\InertiaPostProcessProvider.cs" />
     <Compile Include="Assets\LeapMotion\Core\Examples\Example Assets\ProjectionPostProcessProvider.cs" />
     <Compile Include="Assets\LeapMotion\Core\Plugins\LeapCSharp\Arm.cs" />
@@ -735,6 +752,9 @@
     <Compile Include="Assets\ZED\SDK\NativeInterface\ZEDCameraSettings.cs" />
     <Compile Include="Assets\ZED\SDK\NativeInterface\ZEDCommon.cs" />
     <Compile Include="Assets\ZED\SDK\NativeInterface\ZEDMat.cs" />
+    <None Include="Assets\Depthkit\Examples\Clips\Hebh\Hebh.txt" />
+    <None Include="Assets\Depthkit\Looks\Photo\Shaders\Resources\Depthkit_Photo.shader" />
+    <None Include="Assets\Depthkit\Looks\ZeroDays\Shaders\Resources\Depthkit_ZeroDaysLookFill.shader" />
     <None Include="Assets\ZED\Examples\GreenScreen\Readme.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\GeometryWireframe.shader" />
     <None Include="Assets\ZED\Examples\Plane Detection\Textures\Readme.txt" />
@@ -742,6 +762,7 @@
     <None Include="Assets\ZED\Examples\Dark Room\ReadMe.txt" />
     <None Include="Assets\LeapMotion\Core\Resources\LeapCG.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
+    <None Include="Assets\DataFiles\Imports\Peggy_One\TAKE_06_25_17_53_41_Export_06_25_18_12_51.txt" />
     <None Include="Assets\Oculus\Avatar\Samples\CrossPlatform\Readme.txt" />
     <None Include="Assets\LeapMotion\Core\README_BEFORE_UPDATING.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Post-Processing.shader" />
@@ -753,19 +774,25 @@
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Resources\Multiview Stereo.shader" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Sun\Shader\SunCorona.shader" />
+    <None Include="Assets\DataFiles\Imports\Peggy_One\HANDS_TAKE_106_22_12_16_20_Export_06_22_12_21_07.txt" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Sun\Shader\InnerGlow.shader" />
     <None Include="Assets\ZED\Examples\GreenScreen\Shaders\GreenScreen.shader" />
+    <None Include="Assets\Depthkit\Examples\Clips\Julianne\Julianne.txt" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Forward_Lighting.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\Shaders\AlphaBlendTransition.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_Transparent.shader" />
+    <None Include="Assets\Depthkit\Examples\Clips\John\John.txt" />
     <None Include="Assets\DataFiles\Shaders\InvisibleMask 1.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Deferred.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\explosion\Particle_Softrim_Dissolve_alpha.shader" />
     <None Include="Assets\LeapMotion\Core\readme.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_Loader.shader" />
+    <None Include="Assets\Depthkit\Looks\Resources\Depthkit.cginc" />
     <None Include="Assets\LeapMotion\Core\Shaders\RuntimeGizmos.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Hide.shader" />
+    <None Include="Assets\DataFiles\Imports\Peggy_One\4_TAKE_06_25_18_05_01_Export_06_25_18_12_06.txt" />
+    <None Include="Assets\Depthkit\Looks\ZeroDays\Shaders\Resources\Depthkit_ZeroDaysLookOcclude.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_02.shader" />
     <None Include="Assets\ZED\Examples\GreenScreen\Shaders\Mask_Quad.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\Stereo180Video\Plugins\Android\Audio360\ThirdPartyNotices.txt" />
@@ -775,11 +802,13 @@
     <None Include="Assets\LeapMotion\Core\Dependencies.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\Postprocess_blend.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\Muzzleflash_FX\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\DataFiles\Imports\Peggy_One\HANDS_TAKE_106_22_12_16_20_Export_06_25_18_11_33.txt" />
     <None Include="Assets\LeapMotion\Core\Shaders\ThresholdOverlay.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderSelfOccluding.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Lighting.cginc" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Orbits\Materials\RingShader.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Forward.shader" />
+    <None Include="Assets\Depthkit\Info\LICENSE.txt" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Self-Illumin.shader" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\AvatarSurfaceShaderPBS.shader" />
     <None Include="Assets\Oculus\Avatar\Samples\SocialStarter\README.txt" />
@@ -813,8 +842,10 @@
     <None Include="Assets\StreamingAssets\Vuforia\ThesisDatabase.xml" />
     <None Include="Assets\LeapMotion\Core\Version.txt" />
     <None Include="Assets\ZED\Examples\Planetarium\Resources\Sun\Shader\Sun.shader" />
+    <None Include="Assets\Depthkit\Looks\ZeroDays\Shaders\Resources\Depthkit_ZeroDaysLookPoints.shader" />
     <None Include="Assets\ZED\Examples\SpatialMapping\ZomShooter\LICENSE.txt" />
     <None Include="Assets\LeapMotion\Core\Shaders\VertexOffsetShader.shader" />
+    <None Include="Assets\DataFiles\Imports\Peggy_One\2_TAKE_06_25_17_56_44_Export_06_25_18_12_34.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_SingleComponent.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
     <None Include="Assets\ZED\Examples\Planetarium\Readme.txt" />
@@ -825,9 +856,11 @@
     <None Include="Assets\ZED\SDK\Helpers\Shaders\Unlit\ZED_Unlit.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Resources\DamageSmoke_FX\PriorityParticleAdd.shader" />
+    <None Include="Assets\Depthkit\Looks\ZeroDays\Shaders\Resources\Depthkit_ZeroDaysLookLines.shader" />
     <None Include="Assets\ZED\Examples\GreenScreen\Shaders\Preprocess.shader" />
     <None Include="Assets\ZED\Examples\SpatialMapping\Shaders\Unlit_Transparent.shader" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\Textures.shader" />
+    <None Include="Assets\DataFiles\Imports\Peggy_One\3_TAKE_06_25_18_02_33_Export_06_25_18_12_15.txt" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\ZED_Utils.cginc" />
     <None Include="Assets\ZED\SDK\Helpers\Shaders\ZED_PointCloud.shader" />
     <None Include="Assets\ZED\Examples\Drone Shooter\Readme.txt" />
